@@ -1,0 +1,68 @@
+layout: stacked
+style: dark
+
+plugins:
+  - jekyll-octicons
+  - jekyll-github-metadata
+  - jemoji
+
+permalink: /:year/:month/:day/:title/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts"
+    values:
+      layout: "post"
+
+projects:
+  sort_by: pushed
+  # sort_by options:
+  #   - pushed
+  #   - stars
+  limit: 12
+  exclude:
+    archived: false
+    forks: false
+    projects: 
+      - "homework-0-Uzairfaraz20"
+      - "Language-Guesser"
+      - "hackathon-starter"
+      - "Grid-World"
+      - "Netflix-Movie-Review-Analysis"
+      - "Counter"
+
+    # - repo-name
+
+social_media:
+  # behance: your_username
+  # dribbble: your_username
+  # facebook: your_username
+  # hackerrank: your_username
+  # instagram: your_username
+  # keybase: your_username
+  linkedin: Visit my LinkedIn page
+  # mastodon: your_username
+  # medium: your_username
+  # stackoverflow: your_user_id
+  # telegram: your_username
+  # twitter: your_username
+  # unsplash: your_username
+  # vk: your_username
+  website: You're already on my current website :)
+  # youtube: your_username
+  leetcode: Techncial Interview progress
+
+topics:
+  - name: Cloud Computing
+    web_url: https://github.com/topics/aws
+    image_url: "images/awslogo.webp"
+
+  - name: DevOps
+    image_url: "images/jenkins.png"
+    web_url: https://github.com/topics/devops
+
+  - name: API Development
+    web_url: https://github.com/topics/api
+    image_url: "images/api.png"
